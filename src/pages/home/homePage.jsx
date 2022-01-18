@@ -20,7 +20,7 @@ let HomePage = () => {
             provide a number of specialised services.
           </div>
           <div class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-5">
-            <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md" onClick={() => navigate('/aboutUs')}>
+            <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md" onClick={() => {navigate('/aboutUs')}}>
               About Us
             </div>
             <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">

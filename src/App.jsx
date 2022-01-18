@@ -12,11 +12,11 @@ let App = () => {
       <HomePageHeader />
 
       <Routes>
-        <Route path="/" component={<HomePage />} />
-        <Route path="/aboutUs" component={<AboutPage />} />
-        <Route path="/contactUs" component={<ContactPage />} />
-        <Route path="/projects" component={<ProjectsPage />} />
-        <Route path="/resources" component={<ResourcesPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutUs" element={<AboutPage />} />
+        <Route path="/contactUs" element={<ContactPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/resources" element={<ResourcesPage />} />
       </Routes>
 
       <div class="bg-gray-50 w-screen h-20"></div>

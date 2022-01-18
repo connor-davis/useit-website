@@ -272,7 +272,7 @@ let ResourcesPage = () => {
             Didn't find what you were looking for?{' '}
             <span
               class="border-b border-black cursor-pointer"
-              onClick={() => navigate('/contactUs')}
+              onClick={() => {navigate('/contactUs')}}
             >
               Contact Us!
             </span>

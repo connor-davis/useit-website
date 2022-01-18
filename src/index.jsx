@@ -1,6 +1,16 @@
+import { Router } from 'solid-app-router';
 import { render } from 'solid-js/web';
+import App from './App';
 import './index.css';
-import Root from './Root';
 
-
-render(<Root />, document.getElementById('root'));
+if (typeof global === 'undefined') {
+    window.global = window;
+  }
+  
+  let RoutedApp = () => (
+    <Router>
+      <App />
+    </Router>
+  );
+  
+  render(RoutedApp, document.getElementById('root'));

@@ -12,7 +12,12 @@ let HomePageHeader = () => {
       <div class="flex justify-between items-center">
         <div class="text-3xl">LOGO</div>
 
-        <div class="md:hidden" onClick={() => toggleMenu(!menuToggled())}>
+        <div
+          class="md:hidden"
+          onClick={() => {
+            toggleMenu(!menuToggled());
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -32,68 +37,90 @@ let HomePageHeader = () => {
       <div class={`hidden md:flex items-center`}>
         <div
           class="cursor-pointer py-2 px-4 hover:bg-green-100"
-          onClick={() => navigate('/')}
+          onClick={() => {
+            navigate('/');
+          }}
         >
           Home
         </div>
         <div
           class="cursor-pointer py-2 px-4 hover:bg-green-100"
-          onClick={() => navigate('/aboutUs')}
+          onClick={() => {
+            navigate('/aboutUs');
+          }}
         >
           About Us
         </div>
         <div
           class="cursor-pointer py-2 px-4 hover:bg-green-100"
-          onClick={() => navigate('/projects')}
+          onClick={() => {
+            navigate('/projects');
+          }}
         >
           Projects
         </div>
         <div
           class="cursor-pointer py-2 px-4 hover:bg-green-100"
-          onClick={() => navigate('/contactUs')}
+          onClick={() => {
+            navigate('/contactUs');
+          }}
         >
           Contact Us
         </div>
         <DropDown text={'More'}>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/resources')}
+            onClick={() => {
+              navigate('/resources');
+            }}
           >
             Resources
           </div>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/')}
+            onClick={() => {
+              navigate('/');
+            }}
           >
             Links
           </div>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/')}
+            onClick={() => {
+              navigate('/');
+            }}
           >
             News
           </div>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/')}
+            onClick={() => {
+              navigate('/');
+            }}
           >
             NGO Promotions
           </div>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/')}
+            onClick={() => {
+              navigate('/');
+            }}
           >
             Gallery
           </div>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/')}
+            onClick={() => {
+              navigate('/');
+            }}
           >
             HWBC Photos
           </div>
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => navigate('/')}
+            onClick={() => {
+              navigate('/');
+            }}
           >
             FAQ
           </div>
@@ -110,7 +137,12 @@ let HomePageHeader = () => {
         <div class="flex justify-between items-center p-4">
           <div class="text-3xl">LOGO</div>
 
-          <div class="md:hidden" onClick={() => toggleMenu(!menuToggled())}>
+          <div
+            class="md:hidden"
+            onClick={() => {
+              toggleMenu(!menuToggled());
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
