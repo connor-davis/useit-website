@@ -1,11 +1,15 @@
+import { useNavigate } from 'solid-app-router';
+import Footer from '../../components/footer/footer';
 import AssociationsSlider from '../../components/sliders/associationsSlider';
 import FundersSlider from '../../components/sliders/fundersSlider';
 import PartnershipsSlider from '../../components/sliders/partnershipsSlider';
 
 let AboutPage = () => {
+  let navigate = useNavigate();
+
   return (
-    <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto p-2">
-      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out">
+    <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
+      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
         <div class="flex flex-col space-y-5  pt-10 p-5">
           <div class="flex-none text-5xl text-center font-bold border-b-2 border-green-900 pb-5">
             About Us
@@ -86,9 +90,12 @@ let AboutPage = () => {
           </div>
           <div class="text-lg">
             Call us so we can tell you how!{' '}
-            <a href="#contact" class="border-b border-black">
+            <span
+              onClick={() => navigate('/contactUs')}
+              class="border-b border-black cursor-pointer"
+            >
               Contact Us
-            </a>
+            </span>
           </div>
 
           <div class="text-xl font-bold">Maximise your BEE Rating</div>
@@ -104,6 +111,8 @@ let AboutPage = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

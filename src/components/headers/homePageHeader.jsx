@@ -1,5 +1,6 @@
 import { useNavigate } from 'solid-app-router';
 import { createSignal } from 'solid-js';
+import UseItLogoBig from '../../assets/useitlogobig.webp';
 import DropDown from '../dropdown/DropDown';
 
 let HomePageHeader = () => {
@@ -10,7 +11,14 @@ let HomePageHeader = () => {
   return (
     <div class="flex flex-col md:flex-row md:justify-between md:items-center w-screen p-5 shadow-md bg-white flex-none z-50">
       <div class="flex justify-between items-center">
-        <div class="text-3xl">LOGO</div>
+        <div
+          class="cursor-pointer"
+          onClick={() => {
+            navigate('/');
+          }}
+        >
+          <img src={UseItLogoBig} class="w-32 md:w-48" />
+        </div>
 
         <div
           class="md:hidden"
@@ -79,7 +87,7 @@ let HomePageHeader = () => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
             onClick={() => {
-              navigate('/');
+              navigate('/links');
             }}
           >
             Links
@@ -130,12 +138,12 @@ let HomePageHeader = () => {
       <div
         class={`${
           menuToggled()
-            ? 'absolute top-0 left-0 w-screen h-screen bg-white animate-fade-in duration-50 ease-in-out'
-            : 'hidden animate-fade-out duration-50 ease-in-out'
+            ? 'absolute top-0 left-0 w-screen h-screen z-50 bg-white animate-fade-in ease-in-out'
+            : 'hidden animate-fade-out ease-in-out'
         }`}
       >
-        <div class="flex justify-between items-center p-4">
-          <div class="text-3xl">LOGO</div>
+        <div class="flex justify-between items-center p-5">
+          <div class="text-3xl"></div>
 
           <div
             class="md:hidden"
@@ -209,7 +217,7 @@ let HomePageHeader = () => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
             onClick={() => {
-              navigate('/');
+              navigate('/links');
               toggleMenu(!menuToggled());
             }}
           >

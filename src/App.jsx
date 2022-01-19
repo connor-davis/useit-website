@@ -3,6 +3,7 @@ import HomePageHeader from './components/headers/homePageHeader';
 import AboutPage from './pages/about/aboutPage';
 import ContactPage from './pages/contact/contactPage';
 import HomePage from './pages/home/homePage';
+import LinksPage from './pages/links/linksPage';
 import ProjectsPage from './pages/projects/projectsPage';
 import ResourcesPage from './pages/resources/resourcesPage';
 
@@ -17,9 +18,8 @@ let App = () => {
         <Route path="/contactUs" element={<ContactPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
+        <Route path="/links" element={<LinksPage />} />
       </Routes>
-
-      <div class="bg-gray-50 w-screen h-20"></div>
     </div>
   );
 };

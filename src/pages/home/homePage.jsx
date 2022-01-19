@@ -1,12 +1,13 @@
 import { useNavigate } from 'solid-app-router';
 import StrategyImage from '../../assets/Use It Strategy.webp';
+import Footer from '../../components/footer/footer';
 
 let HomePage = () => {
   let navigate = useNavigate();
 
   return (
-    <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto p-2">
-      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out">
+    <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
+      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
         <div class="flex flex-col space-y-5 text-center pt-10 p-5">
           <div class="text-5xl font-bold">USE-IT Non-Profit Organisation</div>
           <div class="text-3xl">
@@ -20,7 +21,12 @@ let HomePage = () => {
             provide a number of specialised services.
           </div>
           <div class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-5">
-            <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md" onClick={() => {navigate('/aboutUs')}}>
+            <div
+              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md"
+              onClick={() => {
+                navigate('/aboutUs');
+              }}
+            >
               About Us
             </div>
             <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">
@@ -29,7 +35,12 @@ let HomePage = () => {
             <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">
               Videos
             </div>
-            <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">
+            <div
+              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md"
+              onClick={() => {
+                navigate('/resources');
+              }}
+            >
               Resources
             </div>
           </div>
@@ -81,14 +92,19 @@ let HomePage = () => {
           <div class="text-xl font-bold">How can you get involved?</div>
           <ul class="list-disc px-5">
             <li>
-              <a href="#contact" class="border-b border-black">
+              <span
+                onClick={() => navigate('/contactUs')}
+                class="border-b border-black cursor-pointer"
+              >
                 Contact
-              </a>{' '}
+              </span>{' '}
               our offices and someone will respond to your query!
             </li>
           </ul>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
