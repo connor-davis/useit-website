@@ -2,7 +2,7 @@ import UseItLogoSmall from '../../assets/useitlogosmall.webp';
 
 let Footer = () => {
   return (
-    <div class="bg-white w-full p-5">
+    <div class="bg-white w-full p-5 mt-auto">
       <div class="flex flex-col md:flex-row w-full justify-center space-y-10 md:space-y-0 md:space-x-10">
         <div class="flex space-x-5">
           <div

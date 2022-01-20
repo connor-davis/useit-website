@@ -29,7 +29,12 @@ let HomePage = () => {
             >
               About Us
             </div>
-            <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">
+            <div
+              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md"
+              onClick={() => {
+                navigate('/blog');
+              }}
+            >
               Latest News
             </div>
             <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">
@@ -53,9 +58,12 @@ let HomePage = () => {
             </div>
             <div class="text-lg font-semibold">
               For our values and critical success factors follow this{' '}
-              <a href="" class="border-b border-black">
+              <span
+                onClick={() => navigate('/values')}
+                class="border-b border-black cursor-pointer"
+              >
                 link
-              </a>
+              </span>
             </div>
           </div>
         </div>

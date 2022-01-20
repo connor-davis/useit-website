@@ -95,7 +95,7 @@ let HomePageHeader = () => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
             onClick={() => {
-              navigate('/');
+              navigate('/blog');
             }}
           >
             News
@@ -226,7 +226,7 @@ let HomePageHeader = () => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
             onClick={() => {
-              navigate('/');
+              navigate('/blog');
               toggleMenu(!menuToggled());
             }}
           >
