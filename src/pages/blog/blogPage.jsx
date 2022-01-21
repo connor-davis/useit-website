@@ -19,7 +19,7 @@ let NewsPage = ({}) => {
           <div class="w-full grid gap-4 md:grid-cols-3">
             {blogPosts.length > 0 &&
               blogPosts.map((post) => (
-                <div class="w-full h-auto bg-white dark:bg-gray-900 rounded shadow-md space-y-5 shadow-gray-700/20 dark:shadow-gray-400/20 animate-fade-in duration-50 ease-in-out">
+                <div class="w-full h-auto bg-white dark:bg-gray-900 rounded shadow-md space-y-5 shadow-gray-700/20 dark:shadow-gray-900/20 animate-fade-in duration-50 ease-in-out">
                   <div class="flex justify-center items-center">
                     {post.images ? (
                       <img
