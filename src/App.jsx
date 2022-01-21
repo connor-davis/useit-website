@@ -14,6 +14,7 @@ import LinksPage from './pages/links/linksPage';
 import ProjectsPage from './pages/projects/projectsPage';
 import ResourcesPage from './pages/resources/resourcesPage';
 import ValuesPage from './pages/values/valuesPage';
+import WhereToPage from './pages/whereTo/whereToPage';
 
 let App = () => {
   let [theme, toggle] = useThemeToggler();
@@ -39,6 +40,7 @@ let App = () => {
           <Route path="/directors" element={<DirectorsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/whereTo" element={<WhereToPage />} />
         </Routes>
       </div>
     </div>

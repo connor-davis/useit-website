@@ -159,7 +159,7 @@ let HomePageHeader = ({ toggleTheme }) => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
-              navigate('/');
+              navigate('/whereTo');
             }}
           >
             Where to?
@@ -333,7 +333,7 @@ let HomePageHeader = ({ toggleTheme }) => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
-              navigate('/');
+              navigate('/whereTo');
               toggleMenu(!menuToggled());
             }}
           >
