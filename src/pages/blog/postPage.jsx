@@ -29,9 +29,9 @@ let PostPage = () => {
 
   return (
     <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
-      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2 p-2 md:p-5">
+      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 border-tl border-gray-200 dark:border-gray-800 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2 p-2 md:p-5">
         {post.content && (
-          <div class="prose prose-green max-w-none m-0 prose-img:w-full prose-img:m-0 p-5 prose-a:text-green-900 prose-h1:text-green-900 bg-white rounded-md animate-fade-in duration-50 ease-in-out">
+          <div class="prose prose-green dark:prose-invert max-w-none m-0 prose-img:w-full prose-img:m-0 p-5 prose-a:text-green-900 dark:prose-a:text-green-600 prose-h1:text-green-900 dark:prose-h:text-green-600 bg-white dark:bg-gray-900 rounded-md animate-fade-in duration-50 ease-in-out">
             {stringToHTML(post.content)}
           </div>
         )}

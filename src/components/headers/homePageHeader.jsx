@@ -3,18 +3,18 @@ import { createSignal } from 'solid-js';
 import UseItLogoBig from '../../assets/useitlogobig.webp';
 import DropDown from '../dropdown/DropDown';
 
-let HomePageHeader = () => {
+let HomePageHeader = ({ toggleTheme }) => {
   let navigate = useNavigate();
 
   let [menuToggled, toggleMenu] = createSignal(false);
 
   return (
-    <div class="flex flex-col md:flex-row md:justify-between md:items-center w-screen p-5 shadow-md bg-white flex-none z-50">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center w-screen p-5 shadow-md bg-white dark:bg-gray-900 flex-none z-50">
       <div class="flex justify-between items-center">
         <div
           class="cursor-pointer"
           onClick={() => {
-            navigate('/');
+            navigate('/', { replace: true });
           }}
         >
           <img src={UseItLogoBig} class="w-32 md:w-48" />
@@ -44,23 +44,39 @@ let HomePageHeader = () => {
       </div>
       <div class={`hidden md:flex items-center`}>
         <div
-          class="cursor-pointer py-2 px-4 hover:bg-green-100"
+          class="cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
           onClick={() => {
-            navigate('/');
+            navigate('/', { replace: true });
           }}
         >
           Home
         </div>
-        <div
-          class="cursor-pointer py-2 px-4 hover:bg-green-100"
+        <DropDown
+          text={'About Us'}
           onClick={() => {
-            navigate('/aboutUs');
+            navigate('/aboutUs', { replace: true });
           }}
         >
-          About Us
-        </div>
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/documents');
+            }}
+          >
+            Company Documents
+          </div>
+
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/directors');
+            }}
+          >
+            Directors
+          </div>
+        </DropDown>
         <div
-          class="cursor-pointer py-2 px-4 hover:bg-green-100"
+          class="cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
           onClick={() => {
             navigate('/projects');
           }}
@@ -68,7 +84,7 @@ let HomePageHeader = () => {
           Projects
         </div>
         <div
-          class="cursor-pointer py-2 px-4 hover:bg-green-100"
+          class="cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
           onClick={() => {
             navigate('/contactUs');
           }}
@@ -77,7 +93,7 @@ let HomePageHeader = () => {
         </div>
         <DropDown text={'More'}>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/resources');
             }}
@@ -85,7 +101,7 @@ let HomePageHeader = () => {
             Resources
           </div>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/links');
             }}
@@ -93,44 +109,72 @@ let HomePageHeader = () => {
             Links
           </div>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/blog');
             }}
           >
             News
           </div>
-          <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+          {/* <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/');
             }}
           >
             NGO Promotions
-          </div>
+          </div> */}
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
-              navigate('/');
+              navigate('/gallery');
             }}
           >
             Gallery
           </div>
-          <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+          {/* <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/');
             }}
           >
             HWBC Photos
-          </div>
+          </div> */}
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/');
             }}
           >
             FAQ
+          </div>
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/');
+            }}
+          >
+            Recycling
+          </div>
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/');
+            }}
+          >
+            Where to?
+          </div>
+          <div
+            class="dark:hidden break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={toggleTheme}
+          >
+            Dark Theme
+          </div>
+          <div
+            class="hidden dark:block break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={toggleTheme}
+          >
+            Light Theme
           </div>
         </DropDown>
       </div>
@@ -138,7 +182,7 @@ let HomePageHeader = () => {
       <div
         class={`${
           menuToggled()
-            ? 'absolute top-0 left-0 w-screen h-screen z-50 bg-white animate-fade-in ease-in-out'
+            ? 'absolute top-0 left-0 w-screen h-screen z-50 bg-white dark:bg-gray-900 animate-fade-in ease-in-out'
             : 'hidden animate-fade-out ease-in-out'
         }`}
       >
@@ -169,7 +213,7 @@ let HomePageHeader = () => {
         </div>
 
         <div
-          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100"
+          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
           onClick={() => {
             navigate('/');
             toggleMenu(!menuToggled());
@@ -177,17 +221,35 @@ let HomePageHeader = () => {
         >
           Home
         </div>
-        <div
-          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100"
+        <DropDown
+          text={'About Us'}
           onClick={() => {
-            navigate('/aboutUs');
+            navigate('/aboutUs', { replace: true });
             toggleMenu(!menuToggled());
           }}
         >
-          About Us
-        </div>
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/documents');
+              toggleMenu(!menuToggled());
+            }}
+          >
+            Company Documents
+          </div>
+
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/directors');
+              toggleMenu(!menuToggled());
+            }}
+          >
+            Directors
+          </div>
+        </DropDown>
         <div
-          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100"
+          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
           onClick={() => {
             navigate('/projects');
             toggleMenu(!menuToggled());
@@ -196,7 +258,7 @@ let HomePageHeader = () => {
           Projects
         </div>
         <div
-          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100"
+          class="cursor-pointer text-xl py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
           onClick={() => {
             navigate('/contactUs');
             toggleMenu(!menuToggled());
@@ -206,7 +268,7 @@ let HomePageHeader = () => {
         </div>
         <DropDown text={'More'}>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/resources');
               toggleMenu(!menuToggled());
@@ -215,7 +277,7 @@ let HomePageHeader = () => {
             Resources
           </div>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/links');
               toggleMenu(!menuToggled());
@@ -224,7 +286,7 @@ let HomePageHeader = () => {
             Links
           </div>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/blog');
               toggleMenu(!menuToggled());
@@ -232,41 +294,62 @@ let HomePageHeader = () => {
           >
             News
           </div>
-          <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+          {/* <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/');
               toggleMenu(!menuToggled());
             }}
           >
             NGO Promotions
-          </div>
+          </div> */}
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
-              navigate('/');
+              navigate('/gallery');
               toggleMenu(!menuToggled());
             }}
           >
             Gallery
           </div>
           <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
-            onClick={() => {
-              navigate('/');
-              toggleMenu(!menuToggled());
-            }}
-          >
-            HWBC Photos
-          </div>
-          <div
-            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100"
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
               navigate('/');
               toggleMenu(!menuToggled());
             }}
           >
             FAQ
+          </div>
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/');
+              toggleMenu(!menuToggled());
+            }}
+          >
+            Recycling
+          </div>
+          <div
+            class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={() => {
+              navigate('/');
+              toggleMenu(!menuToggled());
+            }}
+          >
+            Where to?
+          </div>
+          <div
+            class="dark:hidden break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={toggleTheme}
+          >
+            Dark Theme
+          </div>
+          <div
+            class="hidden dark:block break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
+            onClick={toggleTheme}
+          >
+            Light Theme
           </div>
         </DropDown>
       </div>

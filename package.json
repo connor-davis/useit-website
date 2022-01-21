@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
+    "emergence.js": "^1.1.2",
     "it-to-buffer": "^2.0.2",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",

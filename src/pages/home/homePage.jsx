@@ -7,7 +7,7 @@ let HomePage = () => {
 
   return (
     <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
-      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
+      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
         <div class="flex flex-col space-y-5 text-center pt-10 p-5">
           <div class="text-5xl font-bold">USE-IT Non-Profit Organisation</div>
           <div class="text-3xl">
@@ -22,7 +22,7 @@ let HomePage = () => {
           </div>
           <div class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-5">
             <div
-              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md"
+              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 dark:bg-green-600 text-white cursor-pointer rounded-md"
               onClick={() => {
                 navigate('/aboutUs');
               }}
@@ -30,18 +30,15 @@ let HomePage = () => {
               About Us
             </div>
             <div
-              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md"
+              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 dark:bg-green-600 text-white cursor-pointer rounded-md"
               onClick={() => {
                 navigate('/blog');
               }}
             >
               Latest News
             </div>
-            <div class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md">
-              Videos
-            </div>
             <div
-              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 text-white cursor-pointer rounded-md"
+              class="flex justify-center items-center w-full h-auto py-2 bg-green-900 dark:bg-green-600 text-white cursor-pointer rounded-md"
               onClick={() => {
                 navigate('/resources');
               }}
@@ -60,7 +57,7 @@ let HomePage = () => {
               For our values and critical success factors follow this{' '}
               <span
                 onClick={() => navigate('/values')}
-                class="border-b border-black cursor-pointer"
+                class="border-b  border-black dark:border-white cursor-pointer"
               >
                 link
               </span>
@@ -72,7 +69,7 @@ let HomePage = () => {
           <img src={StrategyImage} />
         </div>
 
-        <div class="flex flex-col space-y-5 pb-10 p-5 text-black">
+        <div class="flex flex-col space-y-5 pb-10 p-5">
           <div class="text-xl font-bold">
             ​USE-IT is the only organization of it's kind in South Africa, it
             holds, among others, the following strengths:
@@ -102,7 +99,7 @@ let HomePage = () => {
             <li>
               <span
                 onClick={() => navigate('/contactUs')}
-                class="border-b border-black cursor-pointer"
+                class="border-b  border-black dark:border-white cursor-pointer"
               >
                 Contact
               </span>{' '}

@@ -13,8 +13,8 @@ let useBlogPosts = () => {
 
       setState(
         [...state, ...posts.items].sort((a, b) => {
-          if (a.updated > b.updated) return 1;
-          if (a.updated < b.updated) return -1;
+          if (a.updated > b.updated) return -1;
+          if (a.updated < b.updated) return 1;
 
           return 0;
         })

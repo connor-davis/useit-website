@@ -3,9 +3,9 @@ import Footer from "../../components/footer/footer";
 let ContactPage = () => {
   return (
     <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto ">
-      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
+      <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 dark:border-gray-800 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
         <div class="flex flex-col space-y-5 pt-10 p-5">
-          <div class="flex-none text-5xl text-center font-bold border-b-2 border-green-900 pb-5">
+          <div class="flex-none text-5xl text-center font-bold border-b-2 border-green-900 dark:border-green-600 pb-5">
             How to Contact Us
           </div>
 
@@ -23,7 +23,7 @@ let ContactPage = () => {
             >
               <div class="flex flex-col w-full space-y-2">
                 <input
-                  class="bg-white border-l border-t border-r border-b border-green-900 outline-none p-2"
+                  class="bg-white border-l border-t border-r border-b border-green-900 dark:border-green-600 outline-none p-2"
                   type="text"
                   name="name"
                   id="name"
@@ -31,7 +31,7 @@ let ContactPage = () => {
                   required
                 />
                 <input
-                  class="bg-white border-l border-t border-r border-b border-green-900 outline-none p-2"
+                  class="bg-white border-l border-t border-r border-b border-green-900 dark:border-green-600 outline-none p-2"
                   type="email"
                   name="email"
                   id="email"
@@ -39,14 +39,14 @@ let ContactPage = () => {
                   required
                 />
                 <input
-                  class="bg-white border-l border-t border-r border-b border-green-900 outline-none p-2"
+                  class="bg-white border-l border-t border-r border-b border-green-900 dark:border-green-600 outline-none p-2"
                   type="tel"
                   name="phone"
                   id="phone"
                   placeholder="Phone Number"
                 />
                 <input
-                  class="bg-white border-l border-t border-r border-b border-green-900 outline-none p-2"
+                  class="bg-white border-l border-t border-r border-b border-green-900 dark:border-green-600 outline-none p-2"
                   type="text"
                   name="subject"
                   id="subject"
@@ -55,14 +55,14 @@ let ContactPage = () => {
               </div>
               <div class="flex flex-col w-full space-y-2">
                 <textarea
-                  class="w-full h-48 md:h-full bg-white border-l border-t border-r border-b border-green-900 outline-none p-2"
+                  class="w-full h-48 md:h-full bg-white border-l border-t border-r border-b border-green-900 dark:border-green-600 outline-none p-2"
                   name="message"
                   id="message"
                   placeholder="Message"
                 ></textarea>
                 <button
                   type="submit"
-                  class="w-auto bg-green-900 border-l border-t border-r border-b border-green-900 text-white outline-none px-4 py-2"
+                  class="w-auto bg-green-900 dark:bg-green-600 border-l border-t border-r border-b border-green-900 dark:border-green-600 text-white outline-none px-4 py-2"
                 >
                   Send
                 </button>

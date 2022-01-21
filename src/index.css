@@ -16,3 +16,14 @@ div[placeholder]:empty:before {
   content: attr(placeholder);
   color: #a3a3a3;
 }
+
+.galleryImage[data-emergence='hidden'] {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.galleryImage[data-emergence='visible'] {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}
