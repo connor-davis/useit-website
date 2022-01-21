@@ -7,6 +7,7 @@ import PostPage from './pages/blog/postPage';
 import ContactPage from './pages/contact/contactPage';
 import DirectorsPage from './pages/directors/directorsPage';
 import CompanyDocumentsPage from './pages/documents/companyDocumentsPage';
+import FaqPage from './pages/faq/faqPage';
 import GalleryPage from './pages/gallery/galleryPage';
 import HomePage from './pages/home/homePage';
 import LinksPage from './pages/links/linksPage';
@@ -37,6 +38,7 @@ let App = () => {
           <Route path="/documents" element={<CompanyDocumentsPage />} />
           <Route path="/directors" element={<DirectorsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/faq" element={<FaqPage />} />
         </Routes>
       </div>
     </div>

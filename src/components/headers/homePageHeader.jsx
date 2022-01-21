@@ -143,7 +143,7 @@ let HomePageHeader = ({ toggleTheme }) => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
-              navigate('/');
+              navigate('/faq');
             }}
           >
             FAQ
@@ -315,7 +315,7 @@ let HomePageHeader = ({ toggleTheme }) => {
           <div
             class="break-none cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600"
             onClick={() => {
-              navigate('/');
+              navigate('/faq');
               toggleMenu(!menuToggled());
             }}
           >
