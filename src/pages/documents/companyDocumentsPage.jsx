@@ -87,7 +87,7 @@ let CompanyDocumentsPage = ({}) => {
             Should you require any additional documents please feel free to{' '}
             <Link
               href="/contactUs"
-              class="border-b   border-black dark:border-white dark:border-white cursor-pointer"
+              class="border-b   border-black dark:border-white cursor-pointer"
             >
               contact us
             </Link>.

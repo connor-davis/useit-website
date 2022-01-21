@@ -1,7 +1,7 @@
 let DropDown = ({ text, onClick, children }) => {
   return (
     <div class="relative h-auto group">
-      <div class="cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:bg-green-200 text-xl md:text-base" onClick={onClick}>
+      <div class="cursor-pointer py-2 px-4 hover:bg-green-100 dark:hover:bg-green-600 text-xl md:text-base" onClick={onClick}>
         {text}
       </div>
 
