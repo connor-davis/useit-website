@@ -12,6 +12,7 @@ import GalleryPage from './pages/gallery/galleryPage';
 import HomePage from './pages/home/homePage';
 import LinksPage from './pages/links/linksPage';
 import ProjectsPage from './pages/projects/projectsPage';
+import RecyclingPage from './pages/recycling/recyclingPage';
 import ResourcesPage from './pages/resources/resourcesPage';
 import ValuesPage from './pages/values/valuesPage';
 import WhereToPage from './pages/whereTo/whereToPage';
@@ -41,6 +42,7 @@ let App = () => {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/whereTo" element={<WhereToPage />} />
+          <Route path="/recycling" element={<RecyclingPage />} />
         </Routes>
       </div>
     </div>
