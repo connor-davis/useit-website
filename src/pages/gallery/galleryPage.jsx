@@ -1,4 +1,4 @@
-import * as Emergence from 'emergence.js';
+import Emergence from 'emergence.js';
 import { onMount } from 'solid-js';
 import Image1 from '../../assets/gallery/1.webp';
 import Image10 from '../../assets/gallery/10.webp';
