@@ -6,7 +6,7 @@ import Footer from '../../components/footer/footer';
 let PostPage = () => {
   let params = useParams();
 
-  let url = `https://www.googleapis.com/blogger/v3/blogs/912251002452110633/posts/${params.id}?key=AIzaSyBYYFsSeCGec4RCV6tqzZXuW4mBPASptgY&fetchImages=true&fetchBodies=true`;
+  let url = `https://www.googleapis.com/blogger/v3/blogs/1229361302133485573/posts/${params.id}?key=AIzaSyBYYFsSeCGec4RCV6tqzZXuW4mBPASptgY&fetchImages=true&fetchBodies=true`;
 
   let [post, setPost] = createStore({}, { name: params.id + '-blog-post' });
 

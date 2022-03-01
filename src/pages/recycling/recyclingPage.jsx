@@ -16,6 +16,7 @@ import RP from '../../assets/recycling/rp.webp';
 import RPBecomes from '../../assets/recycling/rpBecomes.webp';
 import SteelContainerBecomes from '../../assets/recycling/steelContainerBecomes.webp';
 import SteelContainer from '../../assets/recycling/steel_container.webp';
+import Footer from '../../components/footer/footer';
 import RecyclingModal from '../../components/recyclingModal/recyclingModal';
 
 let RecyclingPage = ({}) => {
@@ -301,6 +302,8 @@ let RecyclingPage = ({}) => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

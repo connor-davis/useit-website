@@ -2,8 +2,8 @@ import { onMount } from 'solid-js';
 import { createStore } from 'solid-js/store';
 
 let useBlogPosts = () => {
-  let url =
-    'https://www.googleapis.com/blogger/v3/blogs/912251002452110633/posts?key=AIzaSyBYYFsSeCGec4RCV6tqzZXuW4mBPASptgY&fetchImages=true&fetchBodies=true';
+  let url =                                      
+    'https://www.googleapis.com/blogger/v3/blogs/1229361302133485573/posts?key=AIzaSyBYYFsSeCGec4RCV6tqzZXuW4mBPASptgY&fetchImages=true&fetchBodies=true';
 
   let [state, setState] = createStore([], { name: 'blog-posts' });
 
