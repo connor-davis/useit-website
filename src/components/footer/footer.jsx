@@ -101,7 +101,7 @@ let Footer = () => {
               </a>
             </div>
           </div>
-          <div class="w-full">© 2022 By Connor Davis</div>
+          <div class="w-full">© 2022 By LoneWolf Technologies</div>
         </div>
       </div>
     </div>
