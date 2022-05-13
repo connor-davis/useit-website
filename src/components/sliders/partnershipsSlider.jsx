@@ -6,7 +6,7 @@ import Glide, {
 
 import AECT from '../../assets/AECT.webp';
 import Baobab from '../../assets/Baobab.webp';
-import DoMore from '../../assets/domore.png';
+import DoMore from '../../assets/domore.jpg';
 import IES from '../../assets/ies.webp';
 import InvoTech from '../../assets/invotech.webp';
 import LifeCo from '../../assets/LifeCo.webp';
