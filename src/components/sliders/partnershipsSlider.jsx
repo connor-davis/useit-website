@@ -1,20 +1,23 @@
 import Glide, {
-    Breakpoints,
-    Controls,
-    Images
+  Breakpoints,
+  Controls,
+  Images
 } from '@glidejs/glide/dist/glide.modular.esm';
-import { onMount } from 'solid-js';
+
 import AECT from '../../assets/AECT.webp';
 import Baobab from '../../assets/Baobab.webp';
+import DoMore from '../../assets/domore.png';
 import IES from '../../assets/ies.webp';
 import InvoTech from '../../assets/invotech.webp';
 import LifeCo from '../../assets/LifeCo.webp';
 import Nedbank from '../../assets/Nedbank.webp';
+import Niya from '../../assets/niya.png';
 import SongiMvelo from '../../assets/SongiMvelo.webp';
 import Umgibe from '../../assets/Umgibe.webp';
 import WildLands from '../../assets/WildLands.webp';
 import WildTrust from '../../assets/WildTrust.webp';
 import Yes4Youth from '../../assets/Yes4Youth.webp';
+import { onMount } from 'solid-js';
 
 const sliderConfiguration = {
   peek: 50,
@@ -107,6 +110,12 @@ let PartnershipsSlider = () => {
               </li>
               <li class="glide__slide w-auto my-auto">
                 <img src={WildLands} />
+              </li>
+              <li class="glide__slide w-auto my-auto">
+                <img src={Niya} />
+              </li>
+              <li class="glide__slide w-auto my-auto">
+                <img src={DoMore} />
               </li>
             </ul>
           </div>
