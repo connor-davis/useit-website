@@ -2,7 +2,7 @@ import AdrienneImage from '../../assets/adrienne.webp';
 import AnukaImage from '../../assets/anuka.webp';
 import BelindaImage from '../../assets/belinda.webp';
 import DevonImage from '../../assets/devon.webp';
-import HeidiImage from '../../assets/heidi.webp';
+import HeidiImage from '../../assets/heidi.png';
 import MarkImage from '../../assets/mark.webp';
 import PaulosImage from '../../assets/paulos.webp';
 import SophieImage from '../../assets/sophie.webp';
@@ -92,7 +92,7 @@ let DirectorsPage = ({}) => {
 
               <div class="flex flex-col space-y-5 w-full">
                 <div class="text-2xl font-bold">Mark Liptrot</div>
-                <div class="text-xl text-green-900 dark:text-green-600">Chairperson</div>
+                <div class="text-xl text-green-900 dark:text-green-600">Director</div>
                 <div class="text-md">
                   Mark Liptrot has been a Director with USE-IT since 2014.
                 </div>
@@ -183,7 +183,7 @@ let DirectorsPage = ({}) => {
                 <div class="text-2xl font-bold">Heidi Cox</div>
                 <div class="text-xl text-green-900 dark:text-green-600">Director</div>
                 <div class="text-md">
-                  Belinda has been with USE-IT since 2018.
+                  Heidi has been with USE-IT since 2018.
                 </div>
                 <div class="text-md">
                   A qualified textile technologist, Heidi has over 20 years’
