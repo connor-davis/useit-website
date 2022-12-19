@@ -5,10 +5,10 @@ import DevonImage from '../../assets/devon.webp';
 import HeidiImage from '../../assets/heidi.png';
 import MarkImage from '../../assets/mark.webp';
 import PaulosImage from '../../assets/paulos.webp';
-import SophieImage from '../../assets/sophie.webp';
+import PortioImage from '../../assets/portio.webp';
 import Footer from '../../components/footer/footer';
 
-let DirectorsPage = ({}) => {
+let DirectorsPage = ({ }) => {
   return (
     <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
       <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
@@ -111,64 +111,33 @@ let DirectorsPage = ({}) => {
 
             <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5">
               <img
-                src={SophieImage}
+                src={PortioImage}
                 class="rounded-full grayscale flex-none w-48 h-48"
               />
 
               <div class="flex flex-col space-y-5 w-full">
-                <div class="text-2xl font-bold">Sophie Crouse</div>
+                <div class="text-2xl font-bold">Portio Dlamini</div>
                 <div class="text-xl text-green-900 dark:text-green-600">Director</div>
                 <div class="text-md">
-                  Sophie Crouse has been a Director with USE-IT since 2020
+                  Portio Dlamini is currently  the Managing Director of Emakheni Group, a company she started 9 years ago. She is a Chemical Process Engineer by proffession, with more than 10 years experience in the Manufacturing industry.
                 </div>
                 <div class="text-md">
-                  Educated in Zimbabwe, England and South Africa, Sophie is an
-                  environmentalist and the embodiment of a global citizen. She
-                  is an excellent communicator and is constantly learning new
-                  languages. Apart from Shona, English and basic Afrikaans, she
-                  has dabbled in Italian, German, Mandarin and worked as a
-                  Japanese translator in Victoria Falls, for a time.
+                  She is  a dynamic woman whose experience in the Manufacturing industry gave her the ability to understand systems and people. And how these can work together to maximise output and increase margin. Emakheni was born out of that!
                 </div>
                 <div class="text-md">
-                  Sophie has over 13 years’ experience in the waste industry and
-                  is passionate about the diversion of waste from landfill. She
-                  has managed to create synergies where waste that was generated
-                  by some organisations and intended for landfill got diverted
-                  and successfully utilised as a raw material for others. She
-                  has also been exposed to various aspects of waste management;
-                  from the very foundation, i.e. construction of the waste area
-                  for one of the first Green Buildings in Durban; to
-                  manufacturing plants and commercial establishments, thus
-                  placing her in the advantageous position of having dealt with
-                  both pre and post-consumer waste.
+                  Running her own business has given her  the ability to dream, solve problems and dive into different roles as a Leader & Change Agent .
                 </div>
                 <div class="text-md">
-                  Sophie has also developed and conducted training for various
-                  echelons within the private sector and parastatals,
-                  tailor-made to suit the audience for the best possible
-                  outcome.
+                  Her strengths in  Leadership, Communication, and Empowerment have given her a competitive edge as an Entrepreneur.  She is also passionate about the empowerment of the marginalized through different mediums in order to transform & elevate their lives. This is one of the major reasons her first business venture has been in the Cleaning & Hygiene industry - to transform lives while cleaning excellently.
                 </div>
                 <div class="text-md">
-                  Before waste management found and wooed her, she was Regional
-                  Sales Manager, over-seeing Sub-Saharan Africa for a Fair Trade
-                  textile and paper screen printing company for over a decade.
-                  She also worked in London’s West End in the nineties.
+                  She has won numerous awards over the past 5 years including Sekela Passion & Patience Awards (funded by SA Homeloans Foundation),  the Regional Positive Role Model Award ( KZN) - by Gender Mainstream Awards, and also came 4th in the same category in Southern  Africa. This award recognizes women who are making a difference  in their industries.
                 </div>
                 <div class="text-md">
-                  Apart from her love for languages, Sophie loves to read,
-                  write, sing, walk and yes, you guessed it, talk.
+                  She was also one of the main participants in the  the KZNTopBusinesswonen 2021 campaign that  was sponsored by Standard Bank.
                 </div>
                 <div class="text-md">
-                  When she is queen, she will banish all those who litter.
-                </div>
-                <div>
-                  <a
-                    href="https://www.linkedin.com/in/sophie-crouse-71044957"
-                    target="_blank"
-                    class="border-b  border-black dark:border-white cursor-pointer"
-                  >
-                    LinkedIn
-                  </a>
+                  Portio sees herself  and  Emakheni Group being players in the  Cleaning & Hygiene, Waste Management and Manufacturing  sectors.  And will continue to transform  lives through the  Empowerment  & Leadership development initiatives
                 </div>
               </div>
             </div>

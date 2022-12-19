@@ -1,7 +1,7 @@
 import { Link } from "solid-app-router";
 import Footer from "../../components/footer/footer";
 
-let CompanyDocumentsPage = ({}) => {
+let CompanyDocumentsPage = ({ }) => {
   return (
     <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
       <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
@@ -11,18 +11,27 @@ let CompanyDocumentsPage = ({}) => {
           </div>
 
           <ul class="marker:text-green-900 dark:marker:text-green-600 list-outside list-disc px-5 text-lg">
-            <li>
+          <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/134R0nMdKG_wIXpoSOgi2Vlf8YULmUBuC/view?ts=6368f4a5"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
-                PBO / Non-Profit Certification
+                PBO Certification
               </a>
             </li>
             <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/1rBNMoqLWJdxT8jOoF8l-kQpSDjJC0twg/view?ts=6368f482"
+                class="border-b   border-black dark:border-white"
+                target="_blank"
+              >
+                Non-Profit Certification
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1eDocdR4LLfV8nlX1KiJYWCq0qn10YSy4/view?ts=6368f4c6"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
@@ -31,7 +40,7 @@ let CompanyDocumentsPage = ({}) => {
             </li>
             <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/1GZIKKw7BPZLAGDMDyuKTJd9tk0xCbHhO/view?ts=6368f445"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
@@ -40,7 +49,7 @@ let CompanyDocumentsPage = ({}) => {
             </li>
             <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/1RLCxGRLuVzAHUZgAU1z0xlhh2czq2NhQ/view?ts=6368f4b5"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
@@ -49,7 +58,7 @@ let CompanyDocumentsPage = ({}) => {
             </li>
             <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/1ZNxuc7CpidpGAekIRlxwa4v5ragKZT2t/view?ts=6368f4da"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
@@ -58,7 +67,7 @@ let CompanyDocumentsPage = ({}) => {
             </li>
             <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/1C-mHjazsPHjeTobMnJL_-CvxaB9ScFFf/view?ts=6368f45f"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
@@ -67,15 +76,27 @@ let CompanyDocumentsPage = ({}) => {
             </li>
             <li>
               <a
-                href="https://156c9157-d9cf-4d98-a423-ffd1268d3ad9.filesusr.com/ugd/9d400e_f7e8dc24382540cfab3d01cfbb3a016f.pdf"
+                href="https://drive.google.com/file/d/1KeNvT0Lpf-xl6OnpUvZOvWIbXvtNhNLY/view?ts=6368f500"
                 class="border-b   border-black dark:border-white"
                 target="_blank"
               >
                 Annual Report 2019-2020
               </a>
             </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1Vw_5GJiusnjXHryN6tkpaq8ZngRbw8U1/view?ts=6368f4ef" class="border-b   border-black dark:border-white"
+                target="_blank"
+              >
+                Annual Report 2020-2021</a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1bw2RFFQXbWaesw5gWor6R06eunRRBxdS/view?ts=6368f471" class="border-b   border-black dark:border-white"
+                target="_blank"
+              >
+                Annual Report 2021-2022</a>
+            </li>
           </ul>
-
+          
           <ul class="list-disc px-5">
             <li>VAT Number: 4920274968</li>
             <li>PBO Number: 930036764</li>

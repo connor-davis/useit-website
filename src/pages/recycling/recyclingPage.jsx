@@ -3,25 +3,35 @@ import AluminiumBecomes from '../../assets/recycling/aluminiumBecomes.webp';
 import Cardboard from '../../assets/recycling/cardboard.webp';
 import CardboardBecomes from '../../assets/recycling/cardboardBecomes.webp';
 import ClosedLoop from '../../assets/recycling/closedLoop.webp';
+import Footer from '../../components/footer/footer';
 import Glass from '../../assets/recycling/glass.webp';
 import GlassBecomes from '../../assets/recycling/glassBecomes.webp';
 import IdentificationCodes from '../../assets/recycling/identificationCodes.webp';
-import Paper from '../../assets/recycling/paper.webp';
-import PaperBecomes from '../../assets/recycling/paperBecomes.webp';
 import PET from '../../assets/recycling/pet.webp';
 import PETBecomes from '../../assets/recycling/petBecomes.webp';
+import Paper from '../../assets/recycling/paper.webp';
+import PaperBecomes from '../../assets/recycling/paperBecomes.webp';
 import Polycoat from '../../assets/recycling/polycoat.webp';
 import PolycoatBecomes from '../../assets/recycling/polycoatBecomes.webp';
 import RP from '../../assets/recycling/rp.webp';
 import RPBecomes from '../../assets/recycling/rpBecomes.webp';
-import SteelContainerBecomes from '../../assets/recycling/steelContainerBecomes.webp';
-import SteelContainer from '../../assets/recycling/steel_container.webp';
-import Footer from '../../components/footer/footer';
 import RecyclingModal from '../../components/recyclingModal/recyclingModal';
+import SteelContainer from '../../assets/recycling/steel_container.webp';
+import SteelContainerBecomes from '../../assets/recycling/steelContainerBecomes.webp';
+import { createSignal } from 'solid-js';
 
 let RecyclingPage = ({}) => {
+  const [scrollTop, setScrollTop] = createSignal(0);
+
   return (
-    <div class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto">
+    <div
+      class="flex flex-col items-center w-screen h-full overflow-x-hidden overflow-y-auto"
+      onScroll={(event) => {
+        const mdl = document.querySelectorAll('.mdl');
+
+        mdl.forEach((mdlElem) => mdlElem.scrollIntoView(true));
+      }}
+    >
       <div class="z-10 flex flex-col w-full md:w-4/5 lg:w-4/6 h-auto shadow-md space-y-2 pt-2 border-tl border-gray-200 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 rounded-sm animate-fade-in duration-50 ease-in-out m-2">
         <div class="flex flex-col space-y-5  pt-10 p-5">
           <div class="flex-none text-5xl text-center font-bold border-b-2 border-green-900 dark:border-green-600 pb-5">
@@ -56,6 +66,7 @@ let RecyclingPage = ({}) => {
                   <div>Aluminium Can</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Aluminium Cans
@@ -87,6 +98,7 @@ let RecyclingPage = ({}) => {
                   <div>Steel Container</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Steel Containers
@@ -118,6 +130,7 @@ let RecyclingPage = ({}) => {
                   <div>PET Plastic Bottles</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 PET Plastic Bottles
@@ -148,6 +161,7 @@ let RecyclingPage = ({}) => {
                   <div>Glass Bottles</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Glass Bottles & Jars
@@ -179,6 +193,7 @@ let RecyclingPage = ({}) => {
                   <div>Polycoat Containers</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Polycoat Containers
@@ -209,6 +224,7 @@ let RecyclingPage = ({}) => {
                   <div>Rigid Plastic</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Rigid Plastics
@@ -239,6 +255,7 @@ let RecyclingPage = ({}) => {
                   <div>Paper</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Household / Office Paper
@@ -269,6 +286,7 @@ let RecyclingPage = ({}) => {
                   <div>Cardboard</div>
                 </div>
               )}
+              scrollTop={scrollTop}
             >
               <div class="text-2xl text-green-900 dark:text-green-600">
                 Cardboard Packaging

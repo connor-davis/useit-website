@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js';
 
-let RecyclingModal = ({ root, children }) => {
+let RecyclingModal = ({ root, children, scrollTop }) => {
   let [active, setActive] = createSignal(false);
 
   return (
@@ -9,6 +9,10 @@ let RecyclingModal = ({ root, children }) => {
         class="cursor-pointer z-10"
         onClick={() => {
           setActive(true);
+
+          const mdl = document.querySelectorAll('.mdl');
+
+          mdl.forEach((mdlElem) => mdlElem.scrollIntoView(true));
         }}
       >
         {root}
@@ -25,7 +29,9 @@ let RecyclingModal = ({ root, children }) => {
             setActive(false);
           }}
         ></div>
-        <div class="absolute z-50 w-full md:w-4/6 h-auto p-5 flex flex-col space-y-5 bg-white dark:bg-gray-900 rounded shadow-lg m-5">
+        <div
+          class={`absolute z-50 mdl w-full md:w-4/6 h-auto p-5 flex flex-col space-y-5 bg-white dark:bg-gray-900 rounded shadow-lg m-5`}
+        >
           <div class="self-end cursor-pointer" onClick={() => setActive(false)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
